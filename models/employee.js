@@ -1,11 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
     var Employee = sequelize.define("Employee", {
         emp_id: {
-            type: Sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true},
         emp_name: {
-            type: Sequelize.STRING}
+            type: DataTypes.STRING}
     });
 
     Employee.associate = function(models) {

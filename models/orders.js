@@ -1,13 +1,13 @@
 module.exports = function(sequelize, DataTypes) {
     var Orders = sequelize.define("Orders", {
         order_id: {
-            type: Sequelize.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true},
         order_qty: {
-            type: Sequelize.INTEGER},
+            type: DataTypes.INTEGER},
         order_details: {
-            type: Sequelize.STRING},
+            type: DataTypes.STRING},
     });
 
     Orders.associate = function(models) {
