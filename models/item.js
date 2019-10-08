@@ -14,14 +14,13 @@ module.exports = function(sequelize, DataTypes) {
     // We're saying that an items should belong to a category
     // An item can't be created without a category due 
     Item.belongsTo(models.Category, {
-      foreignKey: {
+      foreignKey: 'category_id',
         allowNull: false
-      }
+      });
+    Item.hasMany(models.Orders, {
+      foreignKey: 'order_id',
+        allowNull: false
     });
-    // Every item can belong to many orders
-    Item.associate = function(models) {
-      Item.hasMany(models.Orders);
-    };
-  };
+   };
   return Item;
 };

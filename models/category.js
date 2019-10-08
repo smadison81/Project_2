@@ -9,7 +9,9 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Category.associate = function(models) {
-        Category.hasMany(models.Orders);
+        Category.hasMany(models.Orders,{ 
+            foreignKey: 'category_id',
+            allowNull: false});
       };
     return Category;
   };
