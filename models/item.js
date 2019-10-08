@@ -18,6 +18,10 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false
       }
     });
+    // Every item can belong to many orders
+    Item.associate = function(models) {
+      Item.hasMany(models.Orders);
+    };
   };
   return Item;
 };

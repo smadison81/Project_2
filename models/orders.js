@@ -19,7 +19,6 @@ module.exports = function(sequelize, DataTypes) {
           }
         });
       };
-    
       // Every order has one time
     Orders.associate = function(models) {
         Orders.hasOne(models.Item);
