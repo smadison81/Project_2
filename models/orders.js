@@ -1,7 +1,13 @@
 module.exports = function(sequelize, DataTypes) {
     var Orders = sequelize.define("Orders", {
-      order_qty: DataTypes.INTEGER,
-      order_details: DataTypes.STRING,
+        order_id: {
+            type: Sequelize.INTEGER,
+            primaryKey: true,
+            autoIncrement: true},
+        order_qty: {
+            type: Sequelize.INTEGER},
+        order_details: {
+            type: Sequelize.STRING},
     });
 
     Orders.associate = function(models) {
@@ -18,7 +24,6 @@ module.exports = function(sequelize, DataTypes) {
     Orders.associate = function(models) {
         Orders.hasOne(models.Item);
     };
-
 
     return Orders;
   };

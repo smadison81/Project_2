@@ -22,7 +22,7 @@ module.exports = function(app) {
   app.get("/api/orders", function(req, res){
     db.Orders.findAll({
       //need to confirm order_id key or define it sequelize models
-      attributes: ['Orders_id', [sequelize.fn('count', sequelize.col('Orders_id')), 'count']]
+      attributes: ['order_id', [sequelize.fn('count', sequelize.col('order_id')), 'count']]
     }).then(function(order_data){
       res.json(order_data)
     })

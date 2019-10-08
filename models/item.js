@@ -1,7 +1,13 @@
 module.exports = function(sequelize, DataTypes) {
   var Item = sequelize.define("Item", {
-    item_name: DataTypes.STRING,
-    price: DataTypes.DOUBLE,
+    item_id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true},
+    item_name: {
+      type: Sequelize.STRING},
+    price: {
+      type:Sequelize.DOUBLE}
   });
 
   Item.associate = function(models) {
