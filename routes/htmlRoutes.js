@@ -2,13 +2,20 @@ var db = require("../models");
 
 module.exports = function(app) {
   // Load index page
-  app.get("/", function(req, res) {
-    db.Example.findAll({}).then(function(dbExamples) {
-      res.render("index", {
-        msg: "Welcome!",
-        examples: dbExamples
-      });
-    });
+  app.get("/menu", function(req, res) {
+    // db.Example.findAll({}).then(function(dbExamples) {
+    //   res.render("index", {
+    //     msg: "Welcome!",
+    //     examples: dbExamples
+    //   });
+    // });
+
+    // db.Item.findAll({}).then(function(result){
+    //   res.render("menu",{
+    //     items:result
+    //   })
+    // })
+    res.render("menu")
   });
 
   // Load example page and pass in an example by id
