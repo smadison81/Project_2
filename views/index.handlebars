@@ -1,17 +1,99 @@
-<div id="home">
+<!-- Menu Sidebar Section-->
+<div id="MenuSideNav" class="MenuNav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenuNav()">&times;</a>
+  <a href="#">Hot Coffees/Teas</a>
+  <a href="#">Cold Coffees/Teas</a>
+  <a href="#">Sandwiches</a>
+  <a href="#">Tacos</a>
+</div>
+
+<!-- Parallax Section-->
+<div class="Chai-Parallax">
+  <div class="Chai-Absolute Linear-Gradient-BG"></div>
+  <div class="Chai-Container1 container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="Chai-Navbar">
+          <div class="Chai-TL">
+            <a href="/" class="Chai-Title hvr-bob">Chai<img class="Chai-Logo2" src="../images/Chai-Logo2.png"
+                alt="Chai Logo" align="middle">Dash</a>
+            <!--
+            <img class="Chai-Logo2" src="../images/Chai-Logo2.png" alt="Chai Logo" align="left">
+            -->
+          </div>
+          <div class="About-Tag">
+            <a href="#" class="hvr-float-shadow scrollToAbout">About Us</a>
+          </div>
+          <div class="Menu-Tag">
+            <a href="/menu" class="hvr-float-shadow">Menu</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-7">
+        <div class="Chai-Info-Div">
+          <div class="row">
+            <div class="col-7 Chai-Info">
+              <p>Welcome to Chai Dash. We serve freshly ground coffees, such as espresso, latte, cappuccino,
+                and other hot/cold drinks. We also provide sandwiches and tacos. Feel free to order as much
+                as you want. Sit back and enjoy <i class="far fa-smile-beam"></i>
+              </p>
+            </div>
+            <div class="col-4">
+              <div>
+                <img class="Chai-Logo" src="../images/Chai-Logo.png" alt="Chai Logo">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- About Section-->
+<div class="About-Container">
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-8">
+        <div class="About-Fluid">
+          <div class="About-Title">About Us</div>
+
+          <div class="row justify-content-center">
+            <div class="col-11 About-Info">
+              This food app is design by Tahsin, Ahmed, Stephen, and Washington. The softwares, frameworks, and
+              libraries that were used for Front-End of this app are Handlebars, CSS, and Bootstrap which were
+              designed by Tahsin and Ahmed. The Back-End of this app are Javascript, jQuery, Sequelize, and
+              Highcharts which were design by Stephen and Washington.
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="Chai-Container3">
   <div class="container">
     <div class="row">
       <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
+        <h1>Chai Dash</h1>
         <h2>This is our Home Page!</h2>
         <form class="clearfix mb-4" action="POST">
           <div class="form-group">
             <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
+            <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
+              placeholder="Enter Example Text">
           </div>
           <div class="form-group">
             <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
+            <textarea class="form-control" id="example-description" aria-describedby="example-description"
+              placeholder="Enter Example Description"></textarea>
           </div>
           <button id="submit" class="btn btn-primary float-right">Submit</button>
         </form>
@@ -28,6 +110,8 @@
     </div>
   </div>
 </div>
+
+
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>

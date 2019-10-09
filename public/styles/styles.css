@@ -1,3 +1,251 @@
+/*--------------------*/
+/*--Chai Container 1--*/
+.Chai-Parallax {
+  width: 100%;
+  height: 755px;
+  border-bottom: 1.5px solid black;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThyTlECVmvMop-x1XqKUr7J9FQfH_Txhc_VypG6ylW7v7ukr9T");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.Chai-Absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Chai-Container1 {
+  position: relative;
+}
+
+.Linear-Gradient-BG {
+  /*
+  background: linear-gradient(-45deg, rgb(238, 119, 82, .75), rgb(231, 60, 126, .75), rgb(35, 166, 213, .75), rgb(35, 213, 171, .75));
+  background: linear-gradient(to right, rgb(221, 62, 84, .75), rgb(107, 229, 133, .75));
+  */
+  background: linear-gradient(-45deg, rgb(58, 28, 113, .75), rgb(215, 109, 119, .75), rgb(221, 62, 84, .75), rgb(255, 175, 123, .75), rgb(107, 229, 133, .75));
+
+  animation: change 10s ease-in-out infinite;
+  background-size: 400% 400%;
+  /* z-index: 1; */
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.Chai-Navbar {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  margin-top: 25px;
+  color: aliceblue;
+  border-bottom: 3px solid white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Chai-Title {
+  text-decoration: none !important;
+  color: aliceblue;
+  font-size: 70px;
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-weight: bolder;
+  float: left;
+}
+
+.About-Tag {
+  padding-right: 20px;
+  margin-left: 35%;
+  border-right: 1px solid white;
+}
+
+.Menu-Tag,
+.About-Tag {
+  float: right;
+}
+
+.Menu-Tag a,
+.About-Tag a {
+  text-decoration: none !important;
+  background: unset;
+  border-style: none;
+  color: aliceblue;
+  float: right;
+  font-family: 'Monda', Sans-Serif;
+  width: 100%;
+  font-size: 25px;
+}
+
+.Menu-Tag a:hover,
+.Chai-Title:hover {
+  color: aliceblue;
+}
+
+.Chai-Info-Div {
+  height: 300px;
+  margin-top: 20%;
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.Chai-Info {
+  color: aliceblue;
+  font-size: 26px;
+  font-family: 'Monda', Sans-Serif;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-left: 15px;
+}
+
+.Chai-Info p {
+  margin-left: 15px;
+}
+
+.Chai-Logo {
+  height: 295px;
+  width: 325px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Chai-Logo2 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+
+/*--Chai Container 1--*/
+/*--------------------*/
+
+/*-----------------*/
+/*--Side Menu Nav--*/
+.MenuNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.MenuNav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.MenuNav a:hover {
+  /*
+  color: #f1f1f1;
+  */
+  background: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+  /* background color masked along the text and clip away the rest */
+  -webkit-background-clip: text;
+  /* make fill color to transparent so that masked background color will be shown */
+  -webkit-text-fill-color: transparent;
+}
+
+.MenuNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .MenuNav {
+    padding-top: 15px;
+  }
+
+  .MenuNav a {
+    font-size: 18px;
+  }
+}
+
+/*--Side Menu Nav--*/
+/*-----------------*/
+
+/*--------------------*/
+/*--About Container --*/
+.About-Container {
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #ed4264 100%);
+
+
+  width: 100%;
+  height: 755px;
+  border-bottom: 1.5px solid black;
+}
+
+.About-Fluid {
+  margin-top: 5%;
+}
+
+.About-Title {
+  text-align: center;
+  color: aliceblue;
+  font-size: 70px;
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-weight: bolder;
+}
+
+.About-Info {
+  height: 480px;
+  margin-top: 1%;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  color: aliceblue;
+  font-size: 39px;
+  font-family: 'Monda', Sans-Serif;
+  text-align: center;
+}
+
+/*--About Container --*/
+/*--------------------*/
+
+
+/*--------------------*/
+/*--Chai Container 3--*/
+.Chai-Container3 {
+  background: #7b4397;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #dc2430, #7b4397);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 100%;
+}
+
 .list-group-item {
   line-height: 2.5;
 }
+
+/*--Chai Container 3--*/
+/*--------------------*/
