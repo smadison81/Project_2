@@ -1,14 +1,25 @@
 module.exports = function(sequelize, DataTypes) {
     var Orders = sequelize.define("Orders", {
-        order_id: {
+        orderId: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true},
-        order_qty: {
+        orderQty: {
             type: DataTypes.INTEGER},
-        order_details: {
+        orderDetails: {
             type: DataTypes.STRING},
     });
+
+    
+Orders.associate = function(models) {
+    Orders.belongsToMany(models.Item, {
+      through: 'OrderItems',
+      as: 'item',
+      foreignKey: 'orderId',
+      otherKey: 'itemId'
+    });
+  };
+
     return Orders;
   };
   

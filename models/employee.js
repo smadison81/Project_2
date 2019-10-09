@@ -1,10 +1,10 @@
 module.exports = function(sequelize, DataTypes) {
     var Employee = sequelize.define("Employee", {
-        emp_id: {
+        empId: {
             type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true},
-        emp_name: {
+        empName: {
             type: DataTypes.STRING}
     });
 
@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
         // Associating Employee with orders
         // When an Author is deleted, also delete any associated Posts
         Employee.hasMany(models.Orders, {
-            foreignKey: 'emp_id',
+            foreignKey: 'empId',
             allowNull: false
         });
       };
