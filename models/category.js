@@ -9,8 +9,8 @@ module.exports = function(sequelize, DataTypes) {
     });
 
     Category.associate = function(models) {
-        Category.hasMany(models.Orders,{ 
-            foreignKey: 'categoryId',
+        Category.hasMany(models.Item,{ 
+            foreignKey: 'itemId',
             allowNull: false});
       };
     return Category;

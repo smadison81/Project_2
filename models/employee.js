@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
     Employee.associate = function(models) {
         // Associating Employee with orders
         // When an Author is deleted, also delete any associated Posts
-        Employee.hasMany(models.Orders, {
+        Employee.hasMany(models.OrderItem, {
             foreignKey: 'empId',
             allowNull: false
         });
