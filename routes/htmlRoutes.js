@@ -18,6 +18,10 @@ module.exports = function(app) {
     res.render("menu")
   });
 
+  app.get("/manager",function(req,res){
+    res.render("dashboard")
+  })
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
