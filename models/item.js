@@ -11,18 +11,13 @@ module.exports = function(sequelize, DataTypes) {
     price: {
       type: DataTypes.DOUBLE
     },
-    price: {
-      type: DataTypes.DOUBLE
-    }
   });
-
+  
   Item.associate = function(models) {
-    Item.belongsToMany(models.Orders, {
-      through: "OrderItems",
-      as: "orders",
-      foreignKey: "itemid",
-      otherKey: "orderid"
+    Item.hasMany(models.Order,{
+      foreignKey: 'itemId'
     });
   };
+
   return Item;
 };
