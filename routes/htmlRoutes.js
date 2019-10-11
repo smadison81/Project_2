@@ -1,30 +1,47 @@
 var db = require("../models");
 
-module.exports = function(app) {
-  // Load index page
-  app.get("/menu", function(req, res) {
-    // db.Example.findAll({}).then(function(dbExamples) {
-    //   res.render("index", {
-    //     msg: "Welcome!",
-    //     examples: dbExamples
-    //   });
-    // });
-
-    // db.Item.findAll({}).then(function(result){
-    //   res.render("menu",{
-    //     items:result
-    //   })
-    // })
-    res.render("menu")
+module.exports = function (app) {
+  // Load main page
+  app.get("/", function (req, res) {
+    db.Example.findAll({}).then(function (dbExamples) {
+      res.render("index", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
   });
 
-  app.get("/manager",function(req,res){
+  // Load menu page
+  app.get("/menu2", function (req, res) {
+    db.Example.findAll({}).then(function (dbExamples) {
+      res.render("menu2", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+
+  // Load about section on main page from menu page
+  app.get("/about", function (req, res) {
+    db.Example.findAll({}).then(function (dbExamples) {
+      res.render("about", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+
+  app.get("/manager", function (req, res) {
     res.render("dashboard")
   })
 
   // Load example page and pass in an example by id
-  app.get("/example/:id", function(req, res) {
-    db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
+  app.get("/example/:id", function (req, res) {
+    db.Example.findOne({
+      where: {
+        id: req.params.id
+      }
+    }).then(function (dbExample) {
       res.render("example", {
         example: dbExample
       });
@@ -32,7 +49,7 @@ module.exports = function(app) {
   });
 
   // Render 404 page for any unmatched routes
-  app.get("*", function(req, res) {
+  app.get("*", function (req, res) {
     res.render("404");
   });
 };

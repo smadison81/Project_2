@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
-    "database": "chai_db",
+    "password": "root",
+    "database": "exampledb",
     "host": "localhost",
     "dialect": "mysql"
   },

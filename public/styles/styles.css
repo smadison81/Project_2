@@ -1,3 +1,404 @@
-.list-group-item {
-  line-height: 2.5;
+/*------------------*/
+/*--Chai Container--*/
+.Chai-Parallax {
+  width: 100%;
+  height: 755px;
+  border-bottom: 1.5px solid black;
+  background: url("https://media0.giphy.com/media/9uIxmnknkXCDzNF0HY/giphy.gif");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
+
+.Chai-Absolute {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Chai-Container {
+  position: relative;
+}
+
+.Linear-Gradient-BG {
+  /*
+  background: linear-gradient(-45deg, rgb(238, 119, 82, .75), rgb(231, 60, 126, .75), rgb(35, 166, 213, .75), rgb(35, 213, 171, .75));
+  background: linear-gradient(to right, rgb(221, 62, 84, .75), rgb(107, 229, 133, .75));
+  */
+  background: linear-gradient(-45deg, rgb(58, 28, 113, .5), rgb(215, 109, 119, .5), rgb(221, 62, 84, .5), rgb(255, 175, 123, .5), rgb(107, 229, 133, .5), rgb(35, 166, 213, .85));
+
+  animation: change 10s ease-in-out infinite;
+  background-size: 400% 400%;
+  /* z-index: 1; */
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.Chai-Navbar {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  margin-top: 25px;
+  color: aliceblue;
+  border-bottom: 3px solid white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Chai-Title {
+  text-decoration: none !important;
+  color: aliceblue;
+  font-size: 70px;
+  font-family: 'Permanent Marker', cursive;
+  /*font-family: 'Julius Sans One', Sans-Serif;*/
+  font-weight: bolder;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.About-Tag {
+  padding-right: 20px;
+  margin-left: 35%;
+  border-right: 1px solid white;
+}
+
+.Menu-Tag,
+.About-Tag {
+  float: right;
+}
+
+.Menu-Tag a,
+.About-Tag a {
+  text-decoration: none !important;
+  background: unset;
+  border-style: none;
+  color: aliceblue;
+  float: right;
+  font-family: 'Julius Sans One', Sans-Serif;
+  width: 100%;
+  font-size: 25px;
+}
+
+.Menu-Tag a:hover,
+.Chai-Title:hover {
+  color: aliceblue;
+}
+
+.Chai-Info-Div {
+  height: 300px;
+  margin-top: 20%;
+  border: 3px solid white;
+  border-radius: 20px;
+}
+
+.Chai-Info {
+  color: aliceblue;
+  font-size: 26px;
+  font-family: 'Monda', Sans-Serif;
+  font-weight: bold;
+  padding-top: 10px;
+  margin-left: 15px;
+}
+
+.Chai-Info p {
+  margin-left: 15px;
+}
+
+.Chai-Logo {
+  height: 295px;
+  width: 325px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.Chai-Logo2 {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+/*--Chai Container--*/
+/*------------------*/
+
+/*-----------------*/
+/*--Side Menu Nav--*/
+.MenuNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.MenuNav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.MenuNav a:hover {
+  /*
+  color: #f1f1f1;
+  */
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.MenuNav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .MenuNav {
+    padding-top: 15px;
+  }
+
+  .MenuNav a {
+    font-size: 18px;
+  }
+}
+
+/*--Side Menu Nav--*/
+/*-----------------*/
+
+/*--------------------*/
+/*--About Container --*/
+.About-Container {
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #ed4264 100%);
+
+
+  width: 100%;
+  height: 755px;
+  border-bottom: 1.5px solid black;
+}
+
+.About-Fluid {
+  margin-top: 5%;
+}
+
+.About-Title {
+  text-align: center;
+  color: aliceblue;
+  font-size: 70px;
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-weight: bolder;
+}
+
+.About-Info {
+  margin-top: 1%;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  color: aliceblue;
+  font-size: 36px;
+  font-family: 'Monda', Sans-Serif;
+  text-align: center;
+}
+
+/*--About Container --*/
+/*--------------------*/
+
+/*------------------*/
+/*--Menu Container--*/
+.Menu-Container {
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #ed4264 100%);
+  width: 100%;
+}
+
+.Menu-Fluid {
+  margin-top: 5%;
+}
+
+.Menu-Title {
+  text-align: center;
+  color: aliceblue;
+  font-size: 70px;
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-weight: bolder;
+}
+
+.Menu-Info {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  color: aliceblue;
+  text-align: center;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.15),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.4);
+}
+
+.Menu-Logo {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.Menu-Logo:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Menu-Div {
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.Menu-Sections {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.Menu-Component {
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-size: 33px;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.Drink-Info-Container {
+  margin-bottom: 3%;
+}
+
+.Sections-Title {
+  border-bottom: 4px solid white;
+  margin-bottom: 5%;
+  text-align: center;
+  display: inline-block;
+}
+
+.Drink-Logo {
+  border-radius: 50%;
+  height: 200px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.Food-Logo {
+  border-radius: 50%;
+  height: 200px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.Drink-Info,
+.Food-Info {
+  text-align: left;
+  font-family: 'Monda', Sans-Serif;
+}
+
+.Description-Title {
+  font-weight: bolder;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  font-size: 23px;
+}
+
+.Description-Info {
+  font-size: 16px;
+}
+
+.Price-Title {
+  font-weight: bolder;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  font-size: 23px;
+}
+
+.Price-Info {
+  font-size: 23px;
+}
+
+.Quantity {
+  border: 2px solid white;
+  background: unset;
+  margin-top: 5px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.Quantity:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Quantity-Menu {
+  border: 2px solid white;
+  background: unset;
+  min-width: 100% !important;
+  text-align: center;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.Quantity-Item {
+  color: white !important;
+}
+
+.Quantity-Item:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Option {
+  background: unset;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.Submit-Btn {
+  background: unset;
+  border-style: none;
+  margin-top: 8px;
+}
+
+.Submit-Logo {
+  color: white;
+  font-size: 30px;
+}
+
+.Submit-Logo:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*--Menu Container--*/
+/*------------------*/
