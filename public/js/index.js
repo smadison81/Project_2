@@ -123,3 +123,12 @@ function openMenuNav() {
 function closeMenuNav() {
   document.getElementById("MenuSideNav").style.width = "0";
 }
+
+// Add a function to open a checkout sidebar
+function openCheckoutNav() {
+  document.getElementById("CheckoutSideNav").style.width = "250px";
+}
+// Add a function to close a checkout sidebar
+function closeCheckoutNav() {
+  document.getElementById("CheckoutSideNav").style.width = "0";
+}

@@ -26,7 +26,7 @@
   background: linear-gradient(-45deg, rgb(238, 119, 82, .75), rgb(231, 60, 126, .75), rgb(35, 166, 213, .75), rgb(35, 213, 171, .75));
   background: linear-gradient(to right, rgb(221, 62, 84, .75), rgb(107, 229, 133, .75));
   */
-  background: linear-gradient(-45deg, rgb(58, 28, 113, .5), rgb(215, 109, 119, .5), rgb(221, 62, 84, .5), rgb(255, 175, 123, .5), rgb(107, 229, 133, .5), rgb(35, 166, 213, .85));
+  background: linear-gradient(-45deg, rgb(58, 28, 113, .5), rgba(198, 56, 241, 0.5), rgb(215, 109, 119, .5), rgb(221, 62, 84, .5), rgb(255, 175, 123, .5), rgb(107, 229, 133, .5), rgb(35, 166, 213, .5));
 
   animation: change 10s ease-in-out infinite;
   background-size: 400% 400%;
@@ -92,11 +92,15 @@
   font-family: 'Julius Sans One', Sans-Serif;
   width: 100%;
   font-size: 25px;
+  font-weight: bolder;
 }
 
+.About-Tag a:hover,
 .Menu-Tag a:hover,
 .Chai-Title:hover {
-  color: aliceblue;
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Chai-Info-Div {
@@ -155,7 +159,7 @@
   padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: white;
   display: block;
   transition: 0.3s;
 }
@@ -187,8 +191,73 @@
   }
 }
 
+.Home-Title {
+  display: inline-block;
+  border-bottom: 2px solid white;
+}
+
 /*--Side Menu Nav--*/
 /*-----------------*/
+
+/*---------------------*/
+/*--Side Checkout Nav--*/
+.CheckoutNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.CheckoutNav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.CheckoutNav a:hover {
+  /*
+  color: #f1f1f1;
+  */
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.CheckoutNav .Checkoutclosebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .CheckoutNav {
+    padding-top: 15px;
+  }
+
+  .CheckoutNav a {
+    font-size: 18px;
+  }
+}
+
+.Checkout-Title {
+  display: inline-block;
+  border-bottom: 2px solid white;
+}
+
+/*--Side Checkout Nav--*/
+/*---------------------*/
 
 /*--------------------*/
 /*--About Container --*/
@@ -367,6 +436,7 @@
 
 .Quantity-Item {
   color: white !important;
+  cursor: pointer;
 }
 
 .Quantity-Item:hover {
@@ -400,5 +470,74 @@
   -webkit-text-fill-color: transparent;
 }
 
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#myBtn:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /*--Menu Container--*/
 /*------------------*/
+
+/*-----------------------*/
+/*--Dashboard Container--*/
+.Manager-Nav-Link {
+  margin-top: 100%;
+}
+
+.Dashboard-Container {
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #ed4264 100%);
+  width: 100%;
+  height: 753px;
+}
+
+.Dashboard-Fluid {
+  margin-top: 5%;
+}
+
+.Dashboard-Title {
+  text-align: center;
+  color: aliceblue;
+  font-size: 70px;
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-weight: bolder;
+}
+
+.Dashboard-Logo {
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+
+.Dashboard-Logo:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Dashboard-Info {
+  height: 420px;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  color: aliceblue;
+  text-align: center;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.15),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.4);
+}
+
+/*--Dashboard Container--*/
+/*-----------------------*/

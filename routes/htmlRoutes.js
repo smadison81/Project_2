@@ -31,9 +31,15 @@ module.exports = function (app) {
     });
   });
 
+  // Load dashboard page
   app.get("/manager", function (req, res) {
-    res.render("dashboard")
-  })
+    db.Example.findAll({}).then(function (dbExamples) {
+      res.render("dashboard", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
