@@ -1,16 +1,17 @@
 <!-- Menu Sidebar Section-->
 <div id="MenuSideNav" class="MenuNav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeMenuNav()">&times;</a>
-    <a href="#">Hot Coffees/Teas</a>
-    <a href="#">Cold Coffees/Teas</a>
-    <a href="#">Sandwiches</a>
-    <a href="#">Tacos</a>
+    <a href="/">Home</a>
+    <a href="#" class="scrollToHCT">Hot Coffees/Teas</a>
+    <a href="#" class="scrollToCCT">Cold Coffees/Teas</a>
+    <a href="#" class="scrollToSandwiches">Sandwiches</a>
+    <a href="#" class="scrollToTacos">Tacos</a>
 </div>
 
-<!-- Parallax Section-->
-<div class="Chai-Parallax">
-    <div class="Chai-Absolute Linear-Gradient-BG"></div>
-    <div class="Chai-Container1 container-fluid">
+<!-- Menu Section-->
+<div class="Menu-Container">
+    <div class="container-fluid">
+        <!-- Chai Navbar -->
         <div class="row justify-content-center">
             <div class="col-8">
                 <div class="Chai-Navbar">
@@ -20,51 +21,1263 @@
 
                     </div>
                     <div class="About-Tag">
-                        <a href="/" class="hvr-float-shadow scrollToAbout2">About Us</a>
+                        <a href="/about" class="hvr-float-shadow scrollToAbout2">About Us</a>
                     </div>
                     <div class="Menu-Tag">
-                        <a href="#" class="hvr-float-shadow" onclick="openMenuNav()">Menu</a>
+                        <a href="/menu2" class="hvr-float-shadow">Menu</a>
                     </div>
-
 
                 </div>
             </div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-7">
-                <div class="Chai-Info-Div">
-                    <div class="row">
-                        <div class="col-7 Chai-Info">
-                            <p>Welcome to Chai Dash. We serve freshly ground coffees, such as espresso, latte,
-                                cappuccino,
-                                and other hot/cold drinks. We also provide sandwiches and tacos. Feel free to order as
-                                much
-                                as you want. Sit back and enjoy <i class="far fa-smile-beam"></i>
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <div>
-                                <img class="Chai-Logo" src="../images/Chai-Logo.png" alt="Chai Logo">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- About Section-->
-<div class="About-Container">
-    <div class="container-fluid">
+        <!-- End of Chai Navbar -->
         <div class="row justify-content-center">
             <div class="col-8">
-                <div class="About-Fluid">
-                    <div class="About-Title">Menu</div>
-
+                <div class="Menu-Fluid">
+                    <div class="Menu-Title">
+                        Menu <i class="fas fa-mug-hot Menu-Logo hvr-bob" onclick="openMenuNav()"></i>
+                    </div>
+                    <!-- <i class="fas fa-mug-hot"></i> -->
                     <div class="row justify-content-center">
-                        <div class="col-11 About-Info">
+                        <div class="col-11 Menu-Info">
+                            <!--HCT Section-->
+                            <div class="Menu-Div HCT">
+                                <div class="Menu-Sections">
+                                    <div class="Sections-Title">Hot Coffees/Teas</div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Chai Tea Latte:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/17f2da97e5384fb185ea984a73d1eb7c.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Black tea infused with cinnamon, clove, and other warming spices is combined
+                                            with steamed milk and topped with foam for the perfect balance of sweet and
+                                            spicy.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$1.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">French Vanilla Cappuccino:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://wallingfordcoffee.com/wp-content/uploads/2014/11/product-capp.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            A warm, comforting French Vanilla Cappuccino made with whole or nonfat
+                                            steamed milk, bold espresso made from sustainably-sourced beans, fluffy
+                                            foam, and rich French Vanilla flavor.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.50</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">White Chocolate Mocha:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/9ea5cd769c754befaa57f673a6353976.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Our signature espresso meets white chocolate sauce and steamed milk, then is
+                                            finished off with sweetened whipped cream in this white chocolate delight.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$3.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Caramel Macchiato:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/3143700dc441477688ce522d8b847bc8.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Freshly steamed milk with vanilla-flavored syrup is marked with espresso and
+                                            topped with caramel drizzle for an oh-so-sweet finish.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$3.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Pumpkin Spice Latte:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/d75e0ca2917148a2b4b91cd886ed3216.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Our signature espresso and steamed milk with the celebrated flavor
+                                            combination of pumpkin, cinnamon, nutmeg and clove. Enjoy it topped with
+                                            whipped cream and real pumpkin pie spices.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$3.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Caffè Latte:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/28a3f98d601e41e7bd76c54ee0461e4e.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Our dark, rich espresso balanced with steamed milk and a light layer of
+                                            foam. A perfect milk forward warm up.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$3.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Espresso Con Panna:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/109324a0b83443b1a813352b6fcd2f75.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Espresso meets a dollop of whipped cream to enhance the rich and caramelly
+                                            flavors of a straight-up shot.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$3.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Teavana® Chai Tea:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/23e7b63bb6a94062bb60622eb195dd96.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Black tea infused with warm clove, cardamom, cinnamon, and ginger notes.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">London Fog Tea Latte:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/3186050c98eb4c3fa72864cecd788660.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Bright, citrusy spark of Italian bergamot blends with subtle hints of
+                                            lavender, vanilla syrup, and steamed milk for this frothy reinvention of
+                                            classic Earl Grey tea.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Earl Grey Black Tea:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/0bff6b948c5b46479e33b97a078b0c96.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            We take a strong black tea base and add the essence of bergamot, a citrus
+                                            fruit with subtle lemon and floral lavender notes, to create this
+                                            aromatically awesome tea flavor.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Honey Citrus Mint Tea:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/d5261403fc2b4717ae3e51e893033d73.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Jade Citrus Mint™ Green Tea, Peach Tranquility® Herbal Tea, hot water,
+                                            steamed lemonade and a touch of honey mingle tastefully well together for a
+                                            tea that comforts from the inside out.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!--End of HCT Section-->
+                            </div>
+                            <!--CCT Section-->
+                            <div class="Menu-Div CCT">
+                                <div class="Menu-Sections">
+                                    <div class="Sections-Title">Cold Coffees/Teas</div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Chai Tea Latte:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/4b68db1d4f32484786117bf6023e28a3.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Black tea infused with cinnamon, clove, and other warming spices are
+                                            combined with milk and ice for the perfect balance of sweet and spicy.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.15</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Blueberry Black Tea Lemonade:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/fbc63df3793f4ba8b5f9961459df158a.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            This boldly flavored and refreshing iced tea is made with a combination of
+                                            our blueberry-flavored fruit juice blend, Teavana™ iced black tea and
+                                            lemonade, then sweetened with liquid cane sugar and hand-shaken with ice.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.15</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Peach Green Tea:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/d63adae8c4344786bc2b39eb36b0849b.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            This boldy flavored and refreshing iced tea is made with a combination of
+                                            our peach-flavored fruit juice blend and Teavana™ iced green tea, then
+                                            sweetened with liquid cane sugar and hand-shaken with ice.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.15</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Passion Tango™ Tea:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/490038f587a747a4aec60e1e3483c5b8.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Our blend of hibiscus, lemongrass and apple is lightly sweetened and
+                                            handshaken with ice for a refreshingly vibrant tea.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.15</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Guava White Tea Lemonade:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/7f1da23eb8ca4dbaabc58c5b92b7767c.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            This boldly flavored and refreshing iced tea is made with a combination of
+                                            our guava-flavored fruit juice blend, Teavana™ iced white tea and lemonade,
+                                            then sweetened with liquid cane sugar and hand-shaken with ice.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.15</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Pumpkin Cream Cold Brew:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/f6d342b134ed4b9d830cf7b93ba12f4b.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Cold Brew sweetened with vanilla syrup, topped with a pumpkin
+                                            cream cold foam and a dusting of pumpkin spice topping.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Caffè Americano:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/ce205ae74c1a4a2eb66cfe904ebe9a7f.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Espresso shots are topped with cold water to produce a light layer of crema
+                                            then served over ice. The result is this wonderfully rich cup with depth and
+                                            nuance.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Cinnamon Dolce Latte:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/9ed9a0bee69946d0994bb9c2800c13d0.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            We add milk and cinnamon dolce flavored syrup to our signature espresso and
+                                            ice, then top it off with sweetened whipped cream and cinnamon dolce
+                                            topping.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Chai® Blonde Iced Pumpkin Spice Latte:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/8b88d1c4fbac4e3ea9b671db5549bd86.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Our Chai® Blonde espresso and steamed milk with the celebrated flavor
+                                            combination of pumpkin, cinnamon, nutmeg and clove. Enjoy it topped with
+                                            whipped cream and real pumpkin pie spices.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Chai® Blonde Cocoa Cloud Macchiato:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/473d9f5080ba414ab0544ae9553cb1f4.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Cascading Chai® Blonde espresso, flavored toffee nut syrup, our
+                                            signature caramel crosshatch and a mocha drizzle swirl, served over ice.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Drink Info-->
+                                <div class="Menu-Component">Iced Salted Caramel Mocha:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Drink-Logo"
+                                            src="https://globalassets.starbucks.com/assets/c976c0aa86274c05972d331f500d1939.jpg"
+                                            alt="Drink Logo">
+                                    </div>
+                                    <div class="col-4 Drink-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            A delightful combination of espresso, milk, mocha sauce and toffee
+                                            nut–flavored syrup over ice, topped off with sweetened whipped cream and
+                                            caramel sauce—plus a mixture of turbinado sugar and sea salt for the best of
+                                            both worlds.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Drink-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$2.75</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!--End of CCT Section-->
+                            </div>
+                            <!--Sandwiches Section-->
+                            <div class="Menu-Div Sandwiches">
+                                <div class="Menu-Sections">
+                                    <div class="Sections-Title">Sandwiches</div>
+                                </div>
+                                <!--Food Info-->
+                                <div class="Menu-Component">Patty Melt:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Food-Logo"
+                                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190501-patty-melt-horizontal-2-1557162382.png?crop=0.668xw:1.00xh;0.167xw,0&resize=480:*"
+                                            alt="Sandwich Logo">
+                                    </div>
+                                    <div class="col-4 Food-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            A beefy burger that is topped with caramelized onions, melted cheese and
+                                            served toasted on delicious rye bread.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Food-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$4.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Food Info-->
+                                <div class="Menu-Component">The Csavargó:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Food-Logo"
+                                            src="https://assets3.thrillist.com/v1/image/1880784/size/tl-horizontal_main.jpg"
+                                            alt="Sandwich Logo">
+                                    </div>
+                                    <div class="col-4 Food-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            It’s a symphony of warmth and pepper and pickled things. Seared pork belly,
+                                            fat rendered to melt in your mouth like a handful of chocolate, mingles with
+                                            the crisp-skinned richness of Hungarian sausage.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Food-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$4.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Food Info-->
+                                <div class="Menu-Component">The BLT:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Food-Logo"
+                                            src="https://assets3.thrillist.com/v1/image/1880803/size/tl-horizontal_main.jpg"
+                                            alt="Sandwich Logo">
+                                    </div>
+                                    <div class="col-4 Food-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            The bacon is perfectly crispy and salty, mingling with a powerhouse combo of
+                                            bacon fat mayo, and white toast.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Food-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$4.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Food Info-->
+                                <div class="Menu-Component">Chai® Gyro Wrap:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Food-Logo"
+                                            src="https://www.tasteofhome.com/wp-content/uploads/2018/06/shutterstock_650180254.jpg"
+                                            alt="Sandwich Logo">
+                                    </div>
+                                    <div class="col-4 Food-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Grilled meat is cut off a spit and placed in a pita with tons of vegetables.
+                                            It’s fresh and filling.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Food-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$4.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Food Info-->
+                                <div class="Menu-Component">Chicken Strip Monterey Melt:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Food-Logo"
+                                            src="https://3.bp.blogspot.com/-427qP674VoQ/VLbWJRJvkDI/AAAAAAAAjrE/1DH1P9G0-wg/s1600/whataburger-chicken-strip-monterey-melt.jpg"
+                                            alt="Sandwich Logo">
+                                    </div>
+                                    <div class="col-4 Food-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            This sandwich features three cripsy chicken strips, two slices of Montery
+                                            Jack cheese
+                                            grilled onions, poblano, red bell peppers, and Jalapeno ranch sauce, on a 5"
+                                            bun.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Food-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$4.25</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!--End of Sandwiches Section-->
+                            </div>
+                            <!--Tacos Section-->
+                            <div class="Menu-Div Tacos">
+                                <div class="Menu-Sections">
+                                    <div class="Sections-Title">Tacos</div>
+                                </div>
+                                <!--Food Info-->
+                                <div class="Menu-Component">Soft Taco Supreme:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Food-Logo"
+                                            src="https://www.tacobell.com/images/22111_soft_taco_supreme_269x269.jpg"
+                                            alt="Sandwich Logo">
+                                    </div>
+                                    <div class="col-4 Food-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            A warm and soft pita bread wrapped around on a seasoned beef, lettuce, and
+                                            real cheddar cheese.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Food-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$1.50</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!--Food Info-->
+                                <div class="Menu-Component">Chai® Toasted Cheddar Chalupa:</div>
+                                <div class="row Drink-Info-Container">
+                                    <div class="col-3">
+                                        <img class="Food-Logo"
+                                            src="https://www.tacobell.com/images/22854_toasted_cheddar_chalupa_beef_269x269.jpg"
+                                            alt="Sandwich Logo">
+                                    </div>
+                                    <div class="col-4 Food-Info">
+                                        <p class="Description-Title">Description:</p>
+                                        <p class="Description-Info">
+                                            Cheese has been toasted onto the chalupa's shell to create a crispy blanket
+                                            of flavor and texture while its filled with seasoned beef, shredded lettuce,
+                                            diced tomatoes, grated cheddar cheese, and reduced-fat sour cream.
+                                        </p>
+                                    </div>
+                                    <div class="col-2 Food-Info">
+                                        <p class="Price-Title">Price:</p>
+                                        <p class="Price-Info">$1.50</p>
+                                    </div>
+                                    <div class="col-2">
+                                        <!-- Quantity button -->
+                                        <div class="btn-group">
+                                            <button type="button" class="btn Quantity" data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                                Quantity
+                                            </button>
+                                            <div class="dropdown-menu Quantity-Menu">
+                                                <a class="dropdown-item Quantity-Item" href="#">1</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">2</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">3</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">4</a>
+                                                <a class="dropdown-item Quantity-Item" href="#">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <button type="submit" class="Submit-Btn">
+                                            <i class="far fa-thumbs-up Submit-Logo hvr-grow-rotate"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <!--End of Tacos Section-->
+                            </div>
 
                         </div>
                     </div>
@@ -82,4 +1295,4 @@
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>
-<script src="/js/menu.js"></script>
+<script src="/js/menu2.js"></script>

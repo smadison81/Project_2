@@ -41,17 +41,14 @@ if (process.env.NODE_ENV === "test") {
 console.log("Step 1 🌎")
 // Starting the server, syncing our models ------------------------------------/
 db.sequelize.sync(syncOptions).then(function () {
-    console.log("Step 2")
-    app.listen(PORT, function () {
-      console.log(
-        "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
-        PORT,
-        PORT
-      );
-    });
-  })
-  .catch(function (err) {
-    console.log(err);
+  app.listen(PORT, function () {
+    console.log(
+      "==> 🌎  Listening on port %s. Visit http://localhost:%s/menu in your browser.",
+      PORT,
+      PORT
+    );
   });
+
+});
 
 module.exports = app;

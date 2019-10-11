@@ -1,10 +1,10 @@
-/*--------------------*/
-/*--Chai Container 1--*/
+/*------------------*/
+/*--Chai Container--*/
 .Chai-Parallax {
   width: 100%;
   height: 755px;
   border-bottom: 1.5px solid black;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThyTlECVmvMop-x1XqKUr7J9FQfH_Txhc_VypG6ylW7v7ukr9T");
+  background: url("https://media0.giphy.com/media/9uIxmnknkXCDzNF0HY/giphy.gif");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -17,7 +17,7 @@
   height: 100%;
 }
 
-.Chai-Container1 {
+.Chai-Container {
   position: relative;
 }
 
@@ -26,7 +26,7 @@
   background: linear-gradient(-45deg, rgb(238, 119, 82, .75), rgb(231, 60, 126, .75), rgb(35, 166, 213, .75), rgb(35, 213, 171, .75));
   background: linear-gradient(to right, rgb(221, 62, 84, .75), rgb(107, 229, 133, .75));
   */
-  background: linear-gradient(-45deg, rgb(58, 28, 113, .75), rgb(215, 109, 119, .75), rgb(221, 62, 84, .75), rgb(255, 175, 123, .75), rgb(107, 229, 133, .75));
+  background: linear-gradient(-45deg, rgb(58, 28, 113, .5), rgb(215, 109, 119, .5), rgb(221, 62, 84, .5), rgb(255, 175, 123, .5), rgb(107, 229, 133, .5), rgb(35, 166, 213, .85));
 
   animation: change 10s ease-in-out infinite;
   background-size: 400% 400%;
@@ -64,9 +64,11 @@
   text-decoration: none !important;
   color: aliceblue;
   font-size: 70px;
-  font-family: 'Julius Sans One', Sans-Serif;
+  font-family: 'Permanent Marker', cursive;
+  /*font-family: 'Julius Sans One', Sans-Serif;*/
   font-weight: bolder;
   float: left;
+  margin-bottom: 20px;
 }
 
 .About-Tag {
@@ -87,7 +89,7 @@
   border-style: none;
   color: aliceblue;
   float: right;
-  font-family: 'Monda', Sans-Serif;
+  font-family: 'Julius Sans One', Sans-Serif;
   width: 100%;
   font-size: 25px;
 }
@@ -130,9 +132,8 @@
   width: 50px;
 }
 
-
-/*--Chai Container 1--*/
-/*--------------------*/
+/*--Chai Container--*/
+/*------------------*/
 
 /*-----------------*/
 /*--Side Menu Nav--*/
@@ -163,10 +164,8 @@
   /*
   color: #f1f1f1;
   */
-  background: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
-  /* background color masked along the text and clip away the rest */
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
   -webkit-background-clip: text;
-  /* make fill color to transparent so that masked background color will be shown */
   -webkit-text-fill-color: transparent;
 }
 
@@ -216,12 +215,11 @@
 }
 
 .About-Info {
-  height: 480px;
   margin-top: 1%;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
   color: aliceblue;
-  font-size: 39px;
+  font-size: 36px;
   font-family: 'Monda', Sans-Serif;
   text-align: center;
 }
@@ -229,23 +227,178 @@
 /*--About Container --*/
 /*--------------------*/
 
-
-/*--------------------*/
-/*--Chai Container 3--*/
-.Chai-Container3 {
-  background: #7b4397;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #dc2430, #7b4397);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #dc2430, #7b4397);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+/*------------------*/
+/*--Menu Container--*/
+.Menu-Container {
+  background-color: #FBDA61;
+  background-image: linear-gradient(45deg, #FBDA61 0%, #ed4264 100%);
   width: 100%;
 }
 
-.list-group-item {
-  line-height: 2.5;
+.Menu-Fluid {
+  margin-top: 5%;
 }
 
-/*--Chai Container 3--*/
-/*--------------------*/
+.Menu-Title {
+  text-align: center;
+  color: aliceblue;
+  font-size: 70px;
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-weight: bolder;
+}
+
+.Menu-Info {
+  margin-top: 1%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  color: aliceblue;
+  text-align: center;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.15),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.4);
+}
+
+.Menu-Logo {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.Menu-Logo:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Menu-Div {
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.Menu-Sections {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.Menu-Component {
+  font-family: 'Julius Sans One', Sans-Serif;
+  font-size: 33px;
+  text-align: left;
+  font-weight: bolder;
+}
+
+.Drink-Info-Container {
+  margin-bottom: 3%;
+}
+
+.Sections-Title {
+  border-bottom: 4px solid white;
+  margin-bottom: 5%;
+  text-align: center;
+  display: inline-block;
+}
+
+.Drink-Logo {
+  border-radius: 50%;
+  height: 200px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.Food-Logo {
+  border-radius: 50%;
+  height: 200px;
+  width: 100%;
+  margin-top: 12px;
+}
+
+.Drink-Info,
+.Food-Info {
+  text-align: left;
+  font-family: 'Monda', Sans-Serif;
+}
+
+.Description-Title {
+  font-weight: bolder;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  font-size: 23px;
+}
+
+.Description-Info {
+  font-size: 16px;
+}
+
+.Price-Title {
+  font-weight: bolder;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  font-size: 23px;
+}
+
+.Price-Info {
+  font-size: 23px;
+}
+
+.Quantity {
+  border: 2px solid white;
+  background: unset;
+  margin-top: 5px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.Quantity:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Quantity-Menu {
+  border: 2px solid white;
+  background: unset;
+  min-width: 100% !important;
+  text-align: center;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.Quantity-Item {
+  color: white !important;
+}
+
+.Quantity-Item:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Option {
+  background: unset;
+  border: 2px solid white;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.Submit-Btn {
+  background: unset;
+  border-style: none;
+  margin-top: 8px;
+}
+
+.Submit-Logo {
+  color: white;
+  font-size: 30px;
+}
+
+.Submit-Logo:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*--Menu Container--*/
+/*------------------*/

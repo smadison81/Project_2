@@ -1,16 +1,8 @@
-<!-- Menu Sidebar Section-->
-<div id="MenuSideNav" class="MenuNav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeMenuNav()">&times;</a>
-  <a href="#">Hot Coffees/Teas</a>
-  <a href="#">Cold Coffees/Teas</a>
-  <a href="#">Sandwiches</a>
-  <a href="#">Tacos</a>
-</div>
-
 <!-- Parallax Section-->
 <div class="Chai-Parallax">
   <div class="Chai-Absolute Linear-Gradient-BG"></div>
-  <div class="Chai-Container1 container-fluid">
+  <div class="Chai-Container container-fluid">
+    <!-- Chai Navbar -->
     <div class="row justify-content-center">
       <div class="col-8">
         <div class="Chai-Navbar">
@@ -25,12 +17,13 @@
             <a href="#" class="hvr-float-shadow scrollToAbout">About Us</a>
           </div>
           <div class="Menu-Tag">
-            <a href="/menu" class="hvr-float-shadow">Menu</a>
+            <a href="/menu2" class="hvr-float-shadow">Menu</a>
           </div>
 
         </div>
       </div>
     </div>
+    <!-- End of Chai Navbar -->
     <div class="row justify-content-center">
       <div class="col-7">
         <div class="Chai-Info-Div">
@@ -65,9 +58,9 @@
           <div class="row justify-content-center">
             <div class="col-11 About-Info">
               This food app is design by Tahsin, Ahmed, Stephen, and Washington. The softwares, frameworks, and
-              libraries that were used for Front-End of this app are Handlebars, CSS, and Bootstrap which were
-              designed by Tahsin and Ahmed. The Back-End of this app are Javascript, jQuery, Sequelize, and
-              Highcharts which were design by Stephen and Washington.
+              libraries that were used for Front-End of this app are Handlebars, CSS, Bootstrap, Javascript, and
+              jQuery which were designed by Tahsin and Ahmed. The Back-End of this app are MySQL, Sequelize, Javascript,
+              jQuery, and Highcharts which were design by Stephen and Washington. This whole app was planned by Ahmed.
             </div>
           </div>
         </div>
@@ -77,41 +70,6 @@
     </div>
   </div>
 </div>
-
-<div class="Chai-Container3">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>Chai Dash</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text"
-              placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description"
-              placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="/js/index.js"></script>

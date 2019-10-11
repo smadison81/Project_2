@@ -1,7 +1,7 @@
 var db = require("../models");
 
 module.exports = function (app) {
-  // Load index page
+  // Load main page
   app.get("/", function (req, res) {
     db.Example.findAll({}).then(function (dbExamples) {
       res.render("index", {
@@ -11,9 +11,20 @@ module.exports = function (app) {
     });
   });
 
-  app.get("/menu", function (req, res) {
+  // Load menu page
+  app.get("/menu2", function (req, res) {
     db.Example.findAll({}).then(function (dbExamples) {
       res.render("menu", {
+        msg: "Welcome!",
+        examples: dbExamples
+      });
+    });
+  });
+
+  // Load about section on main page from menu page
+  app.get("/about", function (req, res) {
+    db.Example.findAll({}).then(function (dbExamples) {
+      res.render("about", {
         msg: "Welcome!",
         examples: dbExamples
       });
