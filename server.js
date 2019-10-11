@@ -15,10 +15,9 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Handlebars
-app.engine(
-  "handlebars",
-  exphbs({
-    defaultLayout: "main"
+app.engine("handlebars",exphbs({
+    defaultLayout: "main",
+    helpers:require('./config/handlebars-helpers')
   })
 );
 app.set("view engine", "handlebars");
@@ -33,7 +32,7 @@ var syncOptions = {
 
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
-if (process.env.NODE_ENV === "test") {
+if (process.env.NODE_ENV === "test" ) {
   syncOptions.force = true;
 }
 

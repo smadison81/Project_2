@@ -14,7 +14,7 @@ module.exports = function (app) {
   // Load menu page
   app.get("/menu2", function (req, res) {
     db.Example.findAll({}).then(function (dbExamples) {
-      res.render("menu", {
+      res.render("menu2", {
         msg: "Welcome!",
         examples: dbExamples
       });
@@ -30,6 +30,10 @@ module.exports = function (app) {
       });
     });
   });
+
+  app.get("/manager", function (req, res) {
+    res.render("dashboard")
+  })
 
   // Load example page and pass in an example by id
   app.get("/example/:id", function (req, res) {
