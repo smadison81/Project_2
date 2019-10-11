@@ -173,6 +173,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+.MenuNav p {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
 .MenuNav .closebtn {
   position: absolute;
   top: 0;
@@ -194,6 +202,23 @@
 .Home-Title {
   display: inline-block;
   border-bottom: 2px solid white;
+  cursor: pointer;
+}
+
+.Home-Title:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Manager-Nav-Link {
+  display: inline-block;
+  border-top: 2px solid white;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+  padding: 0 0 0 0 !important;
 }
 
 /*--Side Menu Nav--*/
@@ -217,6 +242,14 @@
 
 .CheckoutNav a {
   padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.CheckoutNav p {
   text-decoration: none;
   font-size: 25px;
   color: white;
@@ -254,6 +287,21 @@
 .Checkout-Title {
   display: inline-block;
   border-bottom: 2px solid white;
+}
+
+.Submit-Order {
+  border-top: 2px solid white;
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 0 0 0 !important;
+}
+
+.Submit-Order:hover {
+  background: linear-gradient(90deg, rgba(198, 56, 241, 0.959), rgba(3, 243, 231, 0.95));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /*--Side Checkout Nav--*/
@@ -472,8 +520,8 @@
 
 #myBtn {
   position: fixed;
-  bottom: 20px;
-  right: 30px;
+  bottom: 0;
+  right: 16%;
   z-index: 99;
   font-size: 25px;
   border: none;
@@ -493,10 +541,6 @@
 
 /*-----------------------*/
 /*--Dashboard Container--*/
-.Manager-Nav-Link {
-  margin-top: 100%;
-}
-
 .Dashboard-Container {
   background-color: #FBDA61;
   background-image: linear-gradient(45deg, #FBDA61 0%, #ed4264 100%);
