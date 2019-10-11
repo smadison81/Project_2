@@ -3,21 +3,21 @@ module.exports = function(sequelize, DataTypes) {
     itemId: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      autoIncrement: true},
+      autoIncrement: true
+    },
     itemName: {
-      type: DataTypes.STRING},
+      type: DataTypes.STRING
+    },
     price: {
-      type:DataTypes.DOUBLE}
+      type: DataTypes.DOUBLE
+    },
   });
-
   
-Item.associate = function(models) {
-  Item.belongsToMany(models.Orders, {
-    through: 'OrderItems',
-    as: 'orders',
-    foreignKey: 'itemid',
-    otherKey: 'orderid'
-  });
-};
+  Item.associate = function(models) {
+    Item.hasMany(models.Order,{
+      foreignKey: 'itemId'
+    });
+  };
+
   return Item;
 };
