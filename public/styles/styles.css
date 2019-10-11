@@ -436,6 +436,7 @@
 
 .Quantity-Item {
   color: white !important;
+  cursor: pointer;
 }
 
 .Quantity-Item:hover {
