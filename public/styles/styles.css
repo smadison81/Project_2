@@ -203,6 +203,7 @@
   display: inline-block;
   border-bottom: 2px solid white;
   cursor: pointer;
+  padding: 0 0 0 0 !important;
 }
 
 .Home-Title:hover {
