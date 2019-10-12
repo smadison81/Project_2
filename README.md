@@ -10,6 +10,7 @@
 ##### Tahsin Nazmee
 
 
+
 This project is based on Order Management System. It involves user entering the order at a kiosk, finalizing it and submitting the order. Once the order is received the Order/Line manager assigns the order to a cook. Once the order is completed it’s marked and removed from the list of orders from the cook list (similar to the burger HW). The manager, would have a dashboard that will involve creating, updating, deleting items on the menu. Also manage employees i.e., who get to be assigned a line cook from a list of employees. Last but not the least a dashboard with the following visualization on the KPIs:
 
 * Revenue per day/month
@@ -44,3 +45,7 @@ This will have three views, i.e., send out three HTML files:
 - Create ORM models using sequelize
 - create api routes
 create highchart elements
+
+### New Libraries Used
+- Hover.JS
+- Awesome Font
